@@ -45,3 +45,7 @@ where (de.to_date = '9999-01-01')
 and (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 order by e.emp_no;
 --------------------------------------------------
+-- Mentorship Eligibility count by title
+select count(title) as title_count, title
+from mentorship_eligibilty
+group by title;
